@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Application</title>
+  <link rel="stylesheet" href="/style.css"/>
+  <base href="/" target="_blank">
+</head>
+<body>
+  <div class="chat">
+    <input type="text" class="chat-name" placeholder="Enter Your Name"/>
+    <div class="chat-messages">
+      <div class="chat-message">
+
+      </div>
+    </div>
+    <textArea placeholder="Type your message"></textArea>
+    <div id="chat-status">IDLE</div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script>
+    var socket = io.connect('http://localhost');
+    socket.on('news', function (data) {
+      socket.emit('input', { name: '', message:'Hi, tuhin' });
+    });
+  </script> -->
+
+  <script src='/app-ui.js'></script>
+</body>
+</html>
